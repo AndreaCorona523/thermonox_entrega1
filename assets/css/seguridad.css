@@ -1,0 +1,10 @@
+.garantias_seguridad_list li{
+	margin: 1.5% 2.5%;
+	padding: 0 1%;
+}
+
+.garantias_seguridad_list li::marker{
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #8cc14c;
+}

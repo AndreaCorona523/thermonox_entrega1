@@ -1,0 +1,87 @@
+.aplicaciones_table{
+	display: flex;
+	flex-direction: row;
+}
+
+.aplicaciones_table_columns{
+	width: 33%;
+	text-align: center;
+	align-items: center;
+}
+
+.comida_text{
+	padding-top: 3%;
+}
+
+.division_container{
+	display: flex;
+	flex-direction: row;
+	height: 5px;
+}
+
+.industrias_aplicaciones_table_title{
+	font-size: 22px;
+	padding:5% 2.5% 2% 2.5%;
+	margin: 0 5%;
+	border-top: 1px solid var(--orange);
+	text-align: center;
+}
+
+.industrias_aplicaciones_table_text{
+	padding: auto;
+	margin: 0 2%;
+	text-align: center;
+}
+
+.industrias_aplicaciones_division{
+	margin: 0 2.5%;
+    border-bottom: 1px solid var(--orange);
+    width: 33%;
+}
+
+.limitaciones_aplicaciones_list{
+	margin: 0 auto 2% auto;
+}
+
+.limitaciones_aplicaciones_list li:nth-child(n+2){
+	border-top: 1px solid #dddddd;
+}
+
+.limitaciones_aplicaciones_list li{
+	margin: 1% 4%;
+    padding: 0 1%;
+}
+
+.limitaciones_aplicaciones_list li::marker{
+	content: "\f00d";
+    font-family: "FontAwesome";
+    color: #da314b;
+}
+
+
+.sectores_aplicaciones_list{
+	display: flex;
+	flex-direction: row;
+}
+
+.sectores_aplicaciones_list li{
+	margin: 1% 4%;
+	padding: 0 1%;
+}
+
+.sectores_aplicaciones_list li::marker{
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #8cc14c;
+}
+
+.subtitle1{
+	font-size: 20px;
+	margin: 1% 0;
+}
+
+.subtitle2{
+	font-size: 25px;
+	margin: 2% 0;
+	padding: 0 1%;
+}

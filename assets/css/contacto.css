@@ -1,0 +1,113 @@
+p{
+	text-align: justify;
+}
+
+input,textarea{
+	border: 1px solid #dddddd;
+	height: 32px;
+	min-height: 22px;
+	width: 220px;
+}
+
+input[type="text"],input[type="email"],textarea {
+	padding: 4px 6px;
+	font-size: 16px;
+}
+
+input[type="checkbox"]{
+    width: auto;
+    min-height: 10px;
+    height: 0;
+}
+
+input:invalid {
+    padding: 4px 6px;
+    border: 1px solid #da314b;
+    background: #f2dede;
+}
+    
+select {
+    border-color: #dddddd;
+    height: 32px;
+    min-height: 22px;
+	width: 220px;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 2%;
+}
+
+textarea{
+	overflow: auto;
+}
+
+.campo_input_td{
+    max-width: 50%;
+    padding: 2% 0 0 2%;
+}
+
+.campo_title{
+	width: 40%;
+    padding: 2% 0 0 2%;
+    text-align: right;
+}
+
+.colaboraciones_container{
+	width: 50%;
+	height: 100%;
+	margin: 1%;
+}
+
+.contacto_form_container{
+	width: 50%;
+	height: 100%;
+	margin: 1%;
+}
+
+.contacto_form_table{
+	width: 100%;
+}
+
+.contacto_global_link, .politica_privacidad_link{
+	color: var(--orange);
+	text-decoration: none;
+}
+
+.enviar_button{
+	background-color: #ed6b3a;
+    color: #ffffff;
+    border: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    min-width: 20%;
+    margin: 5% 0 0 40%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.main_info_container{
+    height: auto;
+    width: 90%; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    padding-top: 2%;
+}
+
+#mensaje{
+	min-height: 150px;
+}
+
+@media (max-width: 768px){
+    .main_info_container{
+        flex-direction: column;
+    }
+
+    .colaboraciones_container{
+        width: 100%;
+    }
+    
+    .contacto_form_container{
+        width: 100%;
+    }
+
+}
