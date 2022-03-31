@@ -14,16 +14,19 @@ p{
   transition-timing-function: ease-out;
 }
 
+.footer_about{
+  color: white;
+  background-color: var(--brown);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 80px;
+}
+
 .general_container{
     width: 100%;
     height: auto;
-}
-
-.principal_img_container{
-    width: 100%;
-    height: 480px;
-    background-image: url("../images/acercaThermonox/m-h-hofmeir-pano.jpg");
-    background-position: 50% -57.7575px;
 }
 
 .general_title{
@@ -72,6 +75,13 @@ p{
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+.principal_img_container{
+  width: 100%;
+  height: 480px;
+  background-image: url("../images/acercaThermonox/m-h-hofmeir-pano.jpg");
+  background-position: 50% -57.7575px;
 }
 
 .services_list{
