@@ -1,5 +1,5 @@
 p{
-    padding: 1%;
+  padding: 1%;
 }
 
 .active, .dot:hover {
@@ -22,30 +22,31 @@ p{
   justify-content: space-around;
   align-items: center;
   min-height: 80px;
+  margin-top: 0;
 }
 
 .general_container{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .general_title{
-    font-weight: 400;
-    color: #eb5b25;
-    text-align: center;
-    font-size: 42px;
-    padding-top: 5%;
+  font-weight: 400;
+  color: #eb5b25;
+  text-align: center;
+  font-size: 42px;
+  padding-top: 5%;
 }
 
 .general_info_container{
-    width: 90%;
-    text-align: justify;
-    margin: 0 auto 0 auto;
+  width: 90%;
+  text-align: justify;
+  margin: 0 auto 0 auto;
 }
 
 .general_highlighted_text{
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 @keyframes fade {
@@ -85,34 +86,37 @@ p{
 }
 
 .services_list{
-    font-weight: bold;
-    width: 90%;
-    margin: 1% auto 3% auto;
+  font-weight: bold;
+  width: 90%;
+  margin: 1% auto 3% auto;
 }
 
 .services_list li{
-    margin: 2%;
-    padding-left: 1%;
+  margin: 2%;
+  padding-left: 1%;
 }
 
 .services_list li::marker{
-    content: "\f00c";
-    font-family: "FontAwesome";
-    color: #8cc14c;
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #8cc14c;
 }
 
 .slideshow_container{
   position: relative;
   margin: 0 auto 0 auto;
   width: 100%;
+  
 }
 
 .slideshow_images{
-    display: none;
-    height: 100%;
-    max-height: 500px;
+  display: none;
+  height: 100%;
+
 }
 
 .slideshow_image{
-    height: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
 }
