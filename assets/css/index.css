@@ -152,6 +152,20 @@ ul{
     z-index: 1;
 }
 
+.offcanvas_nav__item a:hover{
+    background-color: var(--orange);
+}
+
+.dropdown__option a{
+    display: flex;
+    padding: 5px 20px;
+    color: white;
+}
+
+.dropdown__option a:hover{
+    background-color: var(--orange);
+}
+
 .cover--show{
     display: block;
 }

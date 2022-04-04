@@ -7,6 +7,7 @@
     margin: 2%;
 }
 
+
 .calls{
     padding: 2rem;
     font-size: 1.125rem;
@@ -25,6 +26,7 @@
 .call__title{
     color: var(--orange);
     font-weight: 400;
+    margin: 1%;
 }
 
 .call__button{
@@ -41,6 +43,7 @@
 
 .call__video{
     width: 100%;
+    margin: 1%;
 }
 
 
@@ -86,9 +89,10 @@
 
 .hero__main_container{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-direction: row;
     justify-content: center;
 }
+
 
 .hero__image_container{
     max-width: 100%;
@@ -135,11 +139,19 @@
     .calls{
         margin: 0 auto;
         max-width: 930px;
-    }
+    } 
 }
 
 @media (min-width: 1024px){
     .calls{
         max-width: 1130px;
+    }
+}
+
+@media (max-width: 1024px){
+    .hero__main_container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 }
