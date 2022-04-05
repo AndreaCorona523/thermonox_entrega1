@@ -117,12 +117,6 @@
     font-size: 22spx;
 }
 
-.slideshow-container {
-    position: relative;
-    background: #f1f1f1f1;
-}
-
-
 .wide_button{
     width: 30%;
 }
@@ -146,13 +140,15 @@
         display: none;
     }
 
+    .caracteristicas_funcionamiento_slideshow_container{
+        display: block;
+    }
+
     .general_highlighted_text{
         text-align: center;
     }
 
-    .caracteristicas_funcionamiento_slideshow_container{
-        display: block;
-    }
+    
 }
   
 
