@@ -83,9 +83,6 @@ $(document).ready(()=> {
 		$('#td_mostrarAire').addClass("caracteristicas_funcionamiento_selected_button");
 	});
 	
-	setInterval(function(){ 
-		plusSlides(1);
-	}, 10000);
 })
 
 var slideIndex = 1;
