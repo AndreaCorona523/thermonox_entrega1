@@ -64,13 +64,6 @@ ul{
     flex-grow: 1;
 }
 
-.menu-icon{
-    color: white;
-    font-size: 32px;
-    position: absolute;
-    left: 0;
-}
-
 .header__logo_container{
     display: block;
     width: 280px;
@@ -80,10 +73,18 @@ ul{
 
 .header__logo{
     width: 100%;
+    height: auto;
 }
 
 .language_container{
     display: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    left: 0;
 }
 
 .navbar{
