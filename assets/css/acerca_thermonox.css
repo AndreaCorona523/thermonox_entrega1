@@ -121,11 +121,11 @@ p{
   background-color: rgba(0,0,0,0.8);
 }
 
-@media(max-width: 768px)  {
+@media(max-width: 768px) {
   .slideshow_container{
     margin-top: 2%;
   }
   .general_title{
-    font-size: 36px;
+    font-size: 34px;
   }
 }
