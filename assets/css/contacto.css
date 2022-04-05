@@ -84,15 +84,6 @@ textarea{
     font-size: inherit;
 }
 
-.main_info_container{
-    height: auto;
-    width: 90%; 
-    margin: 0 auto;
-    display: flex;
-    flex-direction:row;
-    padding-top: 2%;
-}
-
 #mensaje{
 	min-height: 150px;
 }
