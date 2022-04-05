@@ -1,5 +1,6 @@
 @font-face {
     font-family: "bootstrap-icons";
+    font-display: fallback;
     src: url("../fonts/bootstrap-icons.woff2") format("woff2"),
          url("../fonts/bootstrap-icons.woff") format("woff");
 }
