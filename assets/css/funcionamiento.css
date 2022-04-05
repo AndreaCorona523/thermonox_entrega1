@@ -1,5 +1,4 @@
 .advantages_list{
-/*	font-weight: bold;*/
     width: 90%;
     margin: 1% auto 3% auto;
     column-count: 2;
@@ -49,9 +48,107 @@
 }
 
 .caracteristicas_funcionamiento_selected_button,.caracteristicas_funcionamiento_button:hover{
-	background-color: #e7e7e7;
+	background-color: rgb(245 154 120);
+}
+
+.caracteristicas_funcionamiento_slides_container {
+    display: flex;
+    display: row;
+}
+
+.caracteristicas_funcionamiento_slideshow_container{
+    display: none;
 }
 
 .wide_button{
     width: 30%;
+}
+
+
+@media(max-width: 768px){
+    .advantages_list{
+        column-count: 1;
+    }
+
+    .caracteristicas_funcionamiento_container{
+        display: none;
+    }
+
+    .general_highlighted_text{
+        text-align: center;
+    }
+
+    .caracteristicas_funcionamiento_slideshow_container{
+        display: block;
+    }
+}
+
+
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+.caracteristica_slide {
+    display: none;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+}
+
+.caracteristica_slide p{
+    text-align: center;
+}
+  
+
+.funcionamiento_prev, .funcionamiento_next {
+    cursor: pointer;
+    width: 10%;
+    padding: 16px;
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin: auto 0;
+}
+  
+
+.funcionamiento_next {
+    position: relative;
+    margin-right: auto;
+    border-radius: 3px 0 0 3px;
+}
+  
+.funcionamiento_prev:hover, .funcionamiento_next:hover {
+    background-color: rgb(245 154 120);
+    color: white;
+}
+  
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+  
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:  var(--grey);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: var(--orange);
+}
+  
+.slide_title {
+    color: var(--orange);
+    text-align: center;
+    font-size: 22spx;
 }

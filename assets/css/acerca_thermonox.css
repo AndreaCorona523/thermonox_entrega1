@@ -3,7 +3,7 @@ p{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--grey);
 }
 
 .fade {
@@ -32,10 +32,10 @@ p{
 
 .general_title{
   font-weight: 400;
-  color: #eb5b25;
+  color: var(--orange);
   text-align: center;
   font-size: 42px;
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 .general_info_container{
@@ -52,30 +52,6 @@ p{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 .principal_img_container{
@@ -119,4 +95,37 @@ p{
   height: auto;
   width: 100%;
   display: block;
+}
+
+.thermonox_prev, .thermonox_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.thermonox_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.thermonox_prev:hover, .thermonox_next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media(max-width: 768px)  {
+  .slideshow_container{
+    margin-top: 2%;
+  }
+  .general_title{
+    font-size: 36px;
+  }
 }

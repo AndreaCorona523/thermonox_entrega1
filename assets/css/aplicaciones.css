@@ -55,7 +55,7 @@
 .limitaciones_aplicaciones_list li::marker{
 	content: "\f00d";
     font-family: "FontAwesome";
-    color: #da314b;
+    color: var(--orange);
 }
 
 

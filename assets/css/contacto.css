@@ -22,7 +22,7 @@ input[type="checkbox"]{
 
 input:invalid {
     padding: 4px 6px;
-    border: 1px solid #da314b;
+    border: 1px solid var(--orange);
     background: #f2dede;
 }
     
@@ -73,7 +73,7 @@ textarea{
 }
 
 .enviar_button{
-	background-color: #ed6b3a;
+	background-color: var(--orange);
     color: #ffffff;
     border: none;
     padding: 5px 5px;

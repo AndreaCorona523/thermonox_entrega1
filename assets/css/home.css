@@ -5,6 +5,7 @@
     width: 100%;
     height: 2px;
     margin: 2%;
+    display: none;
 }
 
 
@@ -26,7 +27,7 @@
 .call__title{
     color: var(--orange);
     font-weight: 400;
-    margin: 1%;
+    margin-top: 3%;
 }
 
 .call__button{
@@ -35,6 +36,7 @@
     background-color: var(--orange);
     padding: 0.3rem 0.8rem;
     text-decoration: none;
+    margin-bottom: 2%;
 }
 
 .call__button:active{
@@ -145,6 +147,9 @@
 @media (min-width: 1024px){
     .calls{
         max-width: 1130px;
+    }
+    .break-line{
+        display: block;
     }
 }
 
