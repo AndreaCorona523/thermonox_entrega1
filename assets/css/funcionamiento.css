@@ -21,6 +21,14 @@
     padding: 0;
 }
 
+.caracteristicas_funcionamiento_button{
+	font-family: 'Montserrat';
+    font-size: 16px;
+    background: none;
+    border: none;
+    margin: 3% 0;
+}
+
 .caracteristicas_funcionamiento_table{
 	text-align: center;
 	justify-content: center;
@@ -39,17 +47,20 @@
     text-align: center;
 }
 
-.caracteristicas_funcionamiento_button{
-	font-family: 'Montserrat';
-    font-size: 16px;
-    background: none;
-    border: none;
-    margin: 3% 0;
-}
-
 .caracteristicas_funcionamiento_selected_button,.caracteristicas_funcionamiento_button:hover{
 	background-color: rgb(245 154 120);
 }
+
+.caracteristica_slide {
+    display: none;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+/* .caracteristica_slide p{
+    text-align: center;
+} */
 
 .caracteristicas_funcionamiento_slides_container {
     display: flex;
@@ -60,50 +71,25 @@
     display: none;
 }
 
-.wide_button{
-    width: 30%;
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:  var(--grey);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-
-@media(max-width: 768px){
-    .advantages_list{
-        column-count: 1;
-    }
-
-    .caracteristicas_funcionamiento_container{
-        display: none;
-    }
-
-    .general_highlighted_text{
-        text-align: center;
-    }
-
-    .caracteristicas_funcionamiento_slideshow_container{
-        display: block;
-    }
-}
-
-
-.slideshow-container {
-    position: relative;
-    background: #f1f1f1f1;
-  }
-  
-.caracteristica_slide {
-    display: none;
-    padding: 5%;
+.dot-container {
     text-align: center;
-    width: 80%;
+    padding: 20px;
 }
-
-.caracteristica_slide p{
-    text-align: center;
-}
-  
 
 .funcionamiento_prev, .funcionamiento_next {
     cursor: pointer;
-    width: 10%;
+    width: 5%;
     padding: 16px;
     color: var(--orange);
     font-weight: bold;
@@ -124,31 +110,49 @@
     background-color: rgb(245 154 120);
     color: white;
 }
-  
 
-.dot-container {
-    text-align: center;
-    padding: 20px;
-}
-  
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color:  var(--grey);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-.active, .dot:hover {
-    background-color: var(--orange);
-}
-  
 .slide_title {
     color: var(--orange);
     text-align: center;
     font-size: 22spx;
 }
+
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+
+.wide_button{
+    width: 30%;
+}
+
+
+.active, .dot:hover {
+    background-color: var(--orange);
+}
+
+
+/* .caracteristicas_funcionamiento_container{
+    display: none;
+} */
+
+@media(max-width: 768px){
+    .advantages_list{
+        column-count: 1;
+    }
+
+    .caracteristicas_funcionamiento_container{
+        display: none;
+    }
+
+    .general_highlighted_text{
+        text-align: center;
+    }
+
+    .caracteristicas_funcionamiento_slideshow_container{
+        display: block;
+    }
+}
+  
+
