@@ -44,4 +44,12 @@ p{
 	.subtitle3{
 		text-align: center;
 	}
+
+	.thermonoxilo_images_container{
+		flex-direction: column;
+	}
+
+	.thermonoxilo_img_container{
+		width: 100%;
+	}
 }

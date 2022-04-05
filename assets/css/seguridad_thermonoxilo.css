@@ -3,3 +3,11 @@
 	width: 70%;
 	margin: 0 auto 2.5% auto;
 }
+
+@media(max-width: 768px){
+	.seguridad_thermonoxilo_text{
+		font-size: 24px;
+		width: 90%;
+		margin-bottom: 5%;
+	}
+}
