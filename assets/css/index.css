@@ -10,11 +10,14 @@
 
 html{
     height: 100%;
+    background-color: var(--brown);
 }
 
 body{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
     color: var(--grey);
     font-family: 'Montserrat';
     min-height: 100%;
@@ -25,6 +28,7 @@ body{
 .body--offcanvas{
     transform: translateX(270px);
     overflow: hidden;
+    height: 100vh;
 }
 
 ul{
@@ -64,6 +68,13 @@ ul{
     flex-grow: 1;
 }
 
+.menu-icon{
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+}
+
 .header__logo_container{
     display: block;
     width: 280px;
@@ -79,26 +90,26 @@ ul{
     display: none;
 }
 
-.menu-icon{
-    color: white;
-    font-size: 32px;
-    position: absolute;
-    left: 0;
-}
 .navbar{
     display: none;
 }
 
 .offcanvas{
+    display: none;
     color: white;
     position: absolute;
     left: -270px;
     background-color: var(--brown);
-    height: 100vh;
+    height: 0;
     width: 270px;
     overflow: auto;
     line-height: 22px;
     z-index: 11;
+}
+
+.offcanvas--show{
+    height: 100vh;
+    display: block;
 }
 
 .offcanvas a{
@@ -149,20 +160,6 @@ ul{
     min-height: 100vh;
     width: 100vw;
     z-index: 1;
-}
-
-.offcanvas_nav__item a:hover{
-    background-color: var(--orange);
-}
-
-.dropdown__option a{
-    display: flex;
-    padding: 5px 20px;
-    color: white;
-}
-
-.dropdown__option a:hover{
-    background-color: var(--orange);
 }
 
 .cover--show{
