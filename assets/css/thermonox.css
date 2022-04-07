@@ -358,6 +358,10 @@ p{
 }
 
 @media(max-width: 768px){
+    p{
+        margin: 2%;
+    }
+    
 	.advantages_list{
         column-count: 1;
     }
@@ -402,6 +406,7 @@ p{
 
     .subtitle2{
 		text-align: center;
+        margin: 5%;
 	}
 }
 
