@@ -64,69 +64,73 @@
 					<h1 class="general_title">Contacto</h1>	
 				</div>
 				<div class="main_info_container">
-					<div class="contacto_form_container">
+					<div class="support_contact_container">
 						<p class="subtitle2">Soporte técnico</p>
 						<p>Adaptamos nuestros servicios perfectamente a sus necesidades prácticas y para cumplir las expectativas de los clientes lo mejor posible.</p>
 						<p>En conjunto con los tratamiento, nuestro servicio otorga un completo asesoramiento técnico, valoramos especialmente el contacto directo con nuestros cliente para adaptar nuestros servicios perfectamente a sus exigencias prácticas y para cumplir las expectativas de los clientes lo mejor posible, así como el seguimiento post-servicio.</p>
 						<p>¿Necesita mayores informes o cotización?</p>
 						<p>* Campo requerido</p>
-						<form name="contacto_form">
-							<table class="contacto_form_table">
-								<tr>
-									<td class="campo_title">Nombre * </td>
-									<td class="campo_input_td"><input type="text" name="nombre"></td>
-								</tr>
-								<tr>
-									<td class="campo_title">Correo electrónico * </td>
-									<td class="campo_input_td"><input type="email" name="correo_electronico"></td>
-								</tr>
-								
-								<tr>
-									<td class="campo_title">Asunto * </td>
-									<td class="campo_input_td"><input type="text" name="asunto"></td>
-								</tr>
-								<tr>
-									<td class="campo_title" id="mensaje_titulo">Mensaje * </td>
-									<td class="campo_input_td"><textarea name="mensaje" id="mensaje" cols="50" rows="10"> </textarea></td>
-								</tr>
-								<tr>
-									<td class="campo_title" id="mensaje_titulo">Envíame una copia <br>(opcional) </td>
-									<td class="campo_input_td"><input name="copia_adicional" type="checkbox"></td>
-								</tr>
-								<tr>
-									<td class="campo_title" id="mensaje_titulo">Soy una *</td>
-									<td class="campo_input_td" >
+						<div class="contacto_form_container">
+							<form name="contacto_form">
+								<ul>
+									<li>
+										<label for="nombre" >Nombre *</label>
+										<input type="text" name="nombre" id="nombre">
+									</li>
+									<li>
+										<label for="correo_electronico">Correo electrónico *</label>
+										<input type="email" name="correo_electronico" id="correo_electronico">
+									</li>
+									<li>
+										<label for="asunto">Asunto *</label>
+										<input type="text" name="asunto" id="asunto"></td>
+									</li>
+									<li>
+										<label for="mensaje">Mensaje *</label>
+										<textarea name="mensaje" id="mensaje" cols="50" rows="10"> </textarea>
+									</li>
+									<li>
+										<label for="copia_adicional" >Envíame una copia <br>(opcional) </label>
+										<input type="checkbox" name="copia_adicional" id="copia_adicional">
+									</li>
+									<li>
+										<label for="tipo_usuario"  class="campo_title">Soy una *</label>
 										<select name="tipo_usuario" id="tipo_usuario" >
 											<option value="particular">particular</option>
 											<option value="profesional">profesional</option>
 											<option value="empresa">empresa</option>
 											<option value="controlador de plagas">controlador de plagas</option>
 										</select>
-									</td>	
-								</tr>
-								<tr>
-									<td class="campo_title">Municipio * </td>
-									<td class="campo_input_td"><input type="text" name="municipio"></td>
-								</tr>
-								<tr>
-									<td class="campo_title">Estado * </td>
-									<td class="campo_input_td"><input type="text" name="estado"></td>
-								</tr>
-								<tr>
-									<td class="campo_title">Código Postal * </td>
-									<td class="campo_input_td"><input type="text" name="cod_post"></td>
-								</tr>
-								<tr>
-									<td class="campo_title">País * </td>
-									<td class="campo_input_td"><input type="text" name="pais"></td>
-								</tr>
-								<tr>
-									<td class="campo_title" id="mensaje_titulo">Politica de privacidad<br>(opcional) </td>
-									<td class="campo_input_td"><input name="politica_privacidad" type="checkbox">He leído y entendido la <a href="#" class="politica_privacidad_link" target="_blank">política de privacidad.</a></td>
-								</tr>
-							</table>
-							<button type="submit" class="enviar_button" onclick="enviar()">Enviar</button>
-						</form>
+									</li>
+									<li>
+										<label for="municipio">Municipio *</label>
+										<input type="text" name="municipio" id="municipio">
+									</li>
+									<li>
+										<label for="estado">Estado *</label>
+										<input type="text" name="estado" id="estado">
+									</li>
+									<li>
+										<label for="cod_post">Código Postal *</label>
+										<input type="text" name="cod_post" id="cod_post">
+									</li>
+									<li>
+										<label for="pais">País *</label>
+										<input type="text" name="pais" id="pais">
+									</li>
+									<li>
+										<label for="politica_privacidad">Politica de privacidad<br>(opcional)</label>
+										<label id="privacy_policy_label">
+											<input type="checkbox" name="politica_privacidad" id="politica_privacidad">
+											He leído y entendido la <a href="#" class="politica_privacidad_link" target="_blank">política de privacidad.</a> 
+										</label>
+									</li>
+									<li>
+										<button type="submit" class="enviar_button" onclick="enviar()">Enviar</button>
+									</li>
+								</ul>
+							</form>
+						</div>
 					</div>
 
 					<div class="colaboraciones_container">

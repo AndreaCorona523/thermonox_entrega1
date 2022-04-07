@@ -2,6 +2,37 @@ p{
 	text-align: justify;
 }
 
+.colaboraciones_container{
+	width: 50%;
+	height: 100%;
+	margin: 1%;
+}
+
+.contacto_form_container{
+	margin: 0 auto;
+}
+
+.contacto_global_link, .politica_privacidad_link{
+	color: var(--orange);
+	text-decoration: none;
+}
+
+.enviar_button{
+	background-color: var(--orange);
+    color: #ffffff;
+    border: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    min-width: 20%;
+    margin: 0 0 0 40%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
 input,textarea{
 	border: 1px solid #dddddd;
 	height: 32px;
@@ -25,7 +56,22 @@ input:invalid {
     border: 1px solid var(--orange);
     background: #f2dede;
 }
+
+label {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 2% 0 0 2%;
     
+}
+
+#mensaje{
+	min-height: 150px;
+}
+
+#privacy_policy_label{
+    text-align: left;
+}
 select {
     border-color: #dddddd;
     height: 32px;
@@ -36,56 +82,15 @@ select {
     padding-left: 2%;
 }
 
+.support_contact_container{
+	width: 50%;
+	height: 100%;
+	margin: 1%;
+}
+
 textarea{
 	overflow: auto;
-}
-
-.campo_input_td{
-    max-width: 50%;
-    padding: 2% 0 0 2%;
-}
-
-.campo_title{
-	width: 40%;
-    padding: 2% 0 0 2%;
-    text-align: right;
-}
-
-.colaboraciones_container{
-	width: 50%;
-	height: 100%;
-	margin: 1%;
-}
-
-.contacto_form_container{
-	width: 50%;
-	height: 100%;
-	margin: 1%;
-}
-
-.contacto_form_table{
-	width: 100%;
-}
-
-.contacto_global_link, .politica_privacidad_link{
-	color: var(--orange);
-	text-decoration: none;
-}
-
-.enviar_button{
-	background-color: var(--orange);
-    color: #ffffff;
-    border: none;
-    padding: 5px 5px;
-    text-decoration: none;
-    min-width: 20%;
-    margin: 5% 0 0 40%;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-#mensaje{
-	min-height: 150px;
+    vertical-align: top;
 }
 
 @media (max-width: 768px){
@@ -97,7 +102,7 @@ textarea{
         width: 100%;
     }
     
-    .contacto_form_container{
+    .support_contact_container{
         width: 100%;
     }
 
