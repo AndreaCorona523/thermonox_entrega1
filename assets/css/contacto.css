@@ -43,12 +43,14 @@ input,textarea{
 input[type="text"],input[type="email"],textarea {
 	padding: 4px 6px;
 	font-size: 16px;
+    margin: 0 auto;
 }
 
 input[type="checkbox"]{
     width: auto;
     min-height: 10px;
     height: 0;
+    margin: 0 auto;
 }
 
 input:invalid {
@@ -61,8 +63,7 @@ label {
     display: inline-block;
     text-align: right;
     width: 40%;
-    padding: 2% 0 0 2%;
-    
+    padding: 2% 0 0 2%; 
 }
 
 #mensaje{
@@ -94,12 +95,22 @@ textarea{
 }
 
 @media (max-width: 768px){
-    .main_info_container{
-        flex-direction: column;
-    }
 
     .colaboraciones_container{
         width: 100%;
+    }
+
+    .contacto_form_container{
+        text-align: center;
+    }
+
+    label {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main_info_container{
+        flex-direction: column;
     }
     
     .support_contact_container{
