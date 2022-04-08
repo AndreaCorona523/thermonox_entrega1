@@ -382,6 +382,10 @@ p{
         text-align: center;
     }
 
+    .general_title{
+        margin-top: 8%;
+        font-size: 36px;
+    }
 
 	.industrias_aplicaciones_table{
 		flex-direction: column;
